@@ -1,0 +1,1461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The GuessListMain component renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "flex": 1,
+      "margin": 5,
+      "padding": 15,
+    }
+  }
+>
+  <Text>
+    Your guess:
+  </Text>
+  <RCTScrollView
+    data={Array []}
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "display": "flex",
+        "flex": 1,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View />
+  </RCTScrollView>
+</View>
+`;
+
+exports[`The GuessListMain component renders without crashing when game over 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "flex": 1,
+      "margin": 5,
+      "padding": 15,
+    }
+  }
+>
+  <Text>
+    Your guess:
+  </Text>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "guess": "0",
+          "id": "0",
+          "result": Array [
+            "0",
+            "0",
+          ],
+        },
+        Object {
+          "guess": "1",
+          "id": "1",
+          "result": Array [
+            "1",
+            "1",
+          ],
+        },
+        Object {
+          "guess": "2",
+          "id": "2",
+          "result": Array [
+            "2",
+            "2",
+          ],
+        },
+        Object {
+          "guess": "3",
+          "id": "3",
+          "result": Array [
+            "3",
+            "3",
+          ],
+        },
+        Object {
+          "guess": "4",
+          "id": "4",
+          "result": Array [
+            "4",
+            "4",
+          ],
+        },
+        Object {
+          "guess": "5",
+          "id": "5",
+          "result": Array [
+            "5",
+            "5",
+          ],
+        },
+        Object {
+          "guess": "6",
+          "id": "6",
+          "result": Array [
+            "6",
+            "6",
+          ],
+        },
+        Object {
+          "guess": "7",
+          "id": "7",
+          "result": Array [
+            "7",
+            "7",
+          ],
+        },
+        Object {
+          "guess": "8",
+          "id": "8",
+          "result": Array [
+            "8",
+            "8",
+          ],
+        },
+        Object {
+          "guess": "9",
+          "id": "9",
+          "result": Array [
+            "9",
+            "9",
+          ],
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "display": "flex",
+        "flex": 1,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                0
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                0
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                0✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                0X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                1
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                1
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                1✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                1X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                2
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                2
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                2✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                2X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                3
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                3
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                3✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                3X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                4
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                4
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                4✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                4X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                5
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                5
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                5✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                5X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                6
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                6
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                6✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                6X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                7
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                7
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                7✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                7X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                8
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                8
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                8✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                8X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                9
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                9
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                9✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                9X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <Text>
+    Game Over. You lose. The correct number is 1234.
+  </Text>
+</View>
+`;
+
+exports[`The GuessListMain component renders without crashing when game win 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "flex": 1,
+      "margin": 5,
+      "padding": 15,
+    }
+  }
+>
+  <Text>
+    Your guess:
+  </Text>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "guess": "0",
+          "id": "0",
+          "result": Array [
+            "0",
+            "0",
+          ],
+        },
+        Object {
+          "guess": "1",
+          "id": "1",
+          "result": Array [
+            "1",
+            "1",
+          ],
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "display": "flex",
+        "flex": 1,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                0
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                0
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                0✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                0X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "rgba(255, 255, 255, 0.8)",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "margin": 4,
+              "padding": 4,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 8,
+                "marginRight": 8,
+                "padding": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                1
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 20,
+                  }
+                }
+              >
+                1
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "green",
+                    "fontSize": 20,
+                    "paddingRight": 8,
+                  }
+                }
+              >
+                1✓
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "red",
+                    "fontSize": 20,
+                  }
+                }
+              >
+                1X
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <Text>
+    Congratulations! You win.
+  </Text>
+</View>
+`;

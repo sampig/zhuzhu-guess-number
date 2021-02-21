@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "zhuzhu Guess Number",
+    "description": "zhuzhu guess number game.",
+    "slug": "zhuzhuGuessNumber",
+    "platforms": ["android", "ios", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/guess_number_icon.png",
+    "splash": {
+      "image": "./assets/guess_number_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "org.zhuzhu.guessNumber",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      },
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/guess_number_icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "org.zhuzhu.guessNumber",
+      "permissions": [],
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/guess_number_favicon.png"
+    }
+  }
+}

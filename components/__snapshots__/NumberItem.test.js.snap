@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The NumberItem component renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "stretch",
+      "backgroundColor": "rgba(255, 255, 255, 0.8)",
+      "borderRadius": 10,
+      "borderWidth": 2,
+      "flexDirection": "row",
+      "margin": 4,
+      "padding": 4,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginLeft": 8,
+        "marginRight": 8,
+        "padding": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 20,
+          }
+        }
+      >
+        testId
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 20,
+          }
+        }
+      >
+        1
+        2
+        3
+        4
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "green",
+            "fontSize": 20,
+            "paddingRight": 8,
+          }
+        }
+      >
+        2✓
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "red",
+            "fontSize": 20,
+          }
+        }
+      >
+        2X
+      </Text>
+    </View>
+  </View>
+</View>
+`;

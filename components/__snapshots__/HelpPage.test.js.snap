@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The HelpPage component renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flex": 1,
+      "justifyContent": "flex-start",
+      "marginLeft": 16,
+      "marginRight": 16,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 30,
+        "marginBottom": 25,
+        "marginTop": 25,
+      }
+    }
+  >
+    zhuzhu Guess Number
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+      }
+    }
+  >
+    Have 10 chances to guess the 4-digit number (each digit is different). For example, "1✓ 1X" means that there is 1 digit that is totally correct, there is 1 totally wrong digit, and 2 other digits are contained but in wrong position.
+  </Text>
+</View>
+`;
