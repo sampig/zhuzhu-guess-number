@@ -3,8 +3,12 @@
     "name": "zhuzhu Guess Number",
     "description": "zhuzhu guess number game.",
     "slug": "zhuzhuGuessNumber",
-    "platforms": ["android", "ios", "web"],
-    "version": "1.0.0",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/guess_number_icon.png",
     "splash": {
@@ -13,7 +17,8 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/f9494acb-5b20-4760-b4e9-2d7f41d86ba0"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -33,10 +38,21 @@
       },
       "package": "org.zhuzhu.guessNumber",
       "permissions": [],
-      "versionCode": 1
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/guess_number_favicon.png"
+    },
+    "plugins": [
+      "expo-localization"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f9494acb-5b20-4760-b4e9-2d7f41d86ba0"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
