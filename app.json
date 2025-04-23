@@ -37,8 +37,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "org.zhuzhu.guessNumber",
-      "permissions": [],
-      "versionCode": 2
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/guess_number_favicon.png"
