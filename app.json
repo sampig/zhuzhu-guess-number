@@ -43,7 +43,8 @@
       "favicon": "./assets/guess_number_favicon.png"
     },
     "plugins": [
-      "expo-localization"
+      "expo-localization",
+      "expo-font"
     ],
     "extra": {
       "eas": {

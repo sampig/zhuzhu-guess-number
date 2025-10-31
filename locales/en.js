@@ -21,3 +21,21 @@ export default {
   enterNumber: 'Enter a 4-digit number',
   guess: 'Guess',
 }
+
+// Store listing texts (for Google Play / App Store)
+export const store = {
+  title: 'zhuzhu Guess Number',
+  shortDescription: 'zhuzhu Guess Number — guess the 4-digit number in 10 tries!',
+  fullDescription: `zhuzhu Guess Number is a simple, privacy-first logic puzzle game. Try to guess the secret 4-digit number (each digit is unique) in 10 attempts.
+
+Key features:
+- Challenging logic puzzle gameplay
+- 4-digit number, each digit is different
+- 10 chances per game
+- Hints after each guess (✓ for correct digit & position, X for wrong digit, others for misplaced digits)
+- No account needed — all data stays on your device
+- Simple, focused UI
+- Multiple languages supported (English, 中文)
+
+Perfect for quick brain training or casual play. Can you crack the code? Play zhuzhu Guess Number now!`,
+}
