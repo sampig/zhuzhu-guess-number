@@ -1,0 +1,23 @@
+export default {
+  gameName: 'zhuzhu Zahlenraten',
+  guessNumberHome: 'zhuzhu Zahlenraten - Startseite',
+  restartGameTitle: 'Spiel neu starten',
+  restartGameText: 'Möchten Sie das Spiel wirklich neu starten?',
+  cancelButton: 'Abbrechen',
+  startButton: 'Start',
+  helpPageTitle: 'zhuzhu Zahlenraten - Hilfe',
+  gameDescription: 'Sie haben 10 Versuche, die 4-stellige Zahl zu erraten (jede Ziffer ist unterschiedlich). ' +
+    'Zum Beispiel bedeutet "1✓ 1X", dass eine Ziffer vollkommen richtig ist, eine Ziffer ganz falsch ist ' +
+    'und zwei weitere Ziffern enthalten sind, aber an der falschen Position stehen.',
+  help: 'Hilfe',
+  newGame: 'Neues Spiel',
+  gameStatus: 'Spielstatus:',
+  gameStatusNotStart: 'Noch nicht gestartet',
+  gameStatusOver: 'Spiel beendet.',
+  gameStatusRunning: 'Spiel läuft. Sie haben noch %{times} Versuche.',
+  yourGuess: 'Ihr Tipp:',
+  gameLostMsg: 'Spiel beendet. Sie haben verloren. Die richtige Zahl ist %{number}.',
+  gameWinMsg: 'Glückwunsch! Sie haben gewonnen.',
+  enterNumber: 'Geben Sie eine 4-stellige Zahl ein',
+  guess: 'Raten',
+}
