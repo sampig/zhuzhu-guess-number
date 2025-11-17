@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import * as Application from 'expo-application'
 import i18n from 'util/i18n-utils'
 
 const styles = StyleSheet.create({
@@ -16,7 +17,12 @@ const styles = StyleSheet.create({
     marginTop: 25,
     marginBottom: 25,
   },
-  createTime: {
+  version: {
+    fontSize: 14,
+    color: '#888',
+    marginBottom: 10,
+  },
+  description: {
     fontSize: 18,
   },
 })
@@ -30,7 +36,9 @@ function HelpPage () {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{i18n.t('gameName')}</Text>
-      <Text style={styles.createTime}>{i18n.t('gameDescription')}</Text>
+      <Text style={styles.version}>{i18n.t('appVersion')} {Application.nativeApplicationVersion || 'Unknown'}</Text>
+      <Text style={styles.version}>{i18n.t('buildVersion')} {Application.nativeBuildVersion || 'Unknown'}</Text>
+      <Text style={styles.description}>{i18n.t('gameDescription')}</Text>
     </View>
   )
 }

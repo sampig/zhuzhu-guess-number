@@ -9,6 +9,8 @@ export default {
   gameDescription: '有10次机会猜一个4位的数字（每位数字不相同）。' +
     '"1✓ 1X" 表示其中一位的数字完全正确，其中一位的数字完全错位，而另外两位上的数字位置不正确。',
   help: '帮助',
+  appVersion: '应用版本:',
+  buildVersion: '构建版本:',
   newGame: '开始新游戏',
   gameStatus: '游戏状态：',
   gameStatusNotStart: '未开始',

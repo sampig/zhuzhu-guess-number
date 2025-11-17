@@ -10,6 +10,8 @@ export default {
     'For example, "1✓ 1X" means that there is 1 digit that is totally correct, there is 1 totally wrong digit, ' +
     'and 2 other digits are contained but in wrong position.',
   help: 'Help',
+  appVersion: 'App Version:',
+  buildVersion: 'Build:',
   newGame: 'New Game',
   gameStatus: 'Game status:',
   gameStatusNotStart: 'Not start',

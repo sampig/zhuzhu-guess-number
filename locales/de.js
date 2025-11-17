@@ -10,6 +10,8 @@ export default {
     'Zum Beispiel bedeutet "1✓ 1X", dass eine Ziffer vollkommen richtig ist, eine Ziffer ganz falsch ist ' +
     'und zwei weitere Ziffern enthalten sind, aber an der falschen Position stehen.',
   help: 'Hilfe',
+  appVersion: 'App-Version:',
+  buildVersion: 'Build-Version:',
   newGame: 'Neues Spiel',
   gameStatus: 'Spielstatus:',
   gameStatusNotStart: 'Noch nicht gestartet',
