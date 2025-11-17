@@ -1,11 +1,17 @@
 import React from 'react'
-import { Alert, Button, StyleSheet, Text, View } from 'react-native'
+import { Alert, Button, KeyboardAvoidingView, Platform, StyleSheet, Text, View } from 'react-native'
 import i18n from 'util/i18n-utils'
 import useNumber from 'hooks/useNumber'
 import GuessListMain from './GuessListMain'
 import InputNumberForm from './InputNumberForm'
 
 const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+  content: {
+    flex: 1,
+  },
   containerButtons: {
     marginTop: 5,
     padding: 5,
@@ -105,12 +111,18 @@ function Home ({ navigation }) {
   }
 
   return (
-    <>
-      {buttonsNav()}
-      <Text>{i18n.t('gameStatus') + ' ' + gameStatus()}</Text>
-      <GuessListMain gameParam={gameParam} />
-      <InputNumberForm gameParam={gameParam} tryGuess={tryGuess} />
-    </>
+    <KeyboardAvoidingView
+      style={styles.root}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      keyboardVerticalOffset={Platform.OS === 'ios' ? 95 : 0}
+    >
+      <View style={styles.content}>
+        {buttonsNav()}
+        <Text>{i18n.t('gameStatus') + ' ' + gameStatus()}</Text>
+        <GuessListMain gameParam={gameParam} />
+        <InputNumberForm gameParam={gameParam} tryGuess={tryGuess} />
+      </View>
+    </KeyboardAvoidingView>
   )
 }
 

@@ -6,6 +6,7 @@ import NumberItem from './NumberItem'
 const styles = StyleSheet.create({
   listView: {
     flex: 1,
+    minHeight: 0,
     borderWidth: 1,
     borderRadius: 5,
     margin: 5,
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
   containerList: {
     flex: 1,
     display: 'flex',
+    minHeight: 0,
   },
 })
 
