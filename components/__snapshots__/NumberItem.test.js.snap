@@ -3,7 +3,7 @@
 exports[`The NumberItem component renders without crashing 1`] = `
 <View
   style={
-    Object {
+    {
       "alignItems": "center",
       "alignSelf": "stretch",
       "backgroundColor": "rgba(255, 255, 255, 0.8)",
@@ -17,7 +17,7 @@ exports[`The NumberItem component renders without crashing 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "flex": 1,
         "flexDirection": "row",
         "marginLeft": 8,
@@ -28,14 +28,14 @@ exports[`The NumberItem component renders without crashing 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "flex": 1,
         }
       }
     >
       <Text
         style={
-          Object {
+          {
             "fontSize": 20,
           }
         }
@@ -45,7 +45,7 @@ exports[`The NumberItem component renders without crashing 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "paddingLeft": 8,
           "paddingRight": 8,
@@ -54,7 +54,7 @@ exports[`The NumberItem component renders without crashing 1`] = `
     >
       <Text
         style={
-          Object {
+          {
             "fontSize": 20,
           }
         }
@@ -67,7 +67,7 @@ exports[`The NumberItem component renders without crashing 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "flexDirection": "row",
           "paddingLeft": 8,
@@ -77,7 +77,7 @@ exports[`The NumberItem component renders without crashing 1`] = `
     >
       <Text
         style={
-          Object {
+          {
             "color": "green",
             "fontSize": 20,
             "paddingRight": 8,
@@ -88,7 +88,7 @@ exports[`The NumberItem component renders without crashing 1`] = `
       </Text>
       <Text
         style={
-          Object {
+          {
             "color": "red",
             "fontSize": 20,
           }

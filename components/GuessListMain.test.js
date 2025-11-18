@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react-native'
 import GuessListMain from './GuessListMain'
 
 const mockNumberItem = (id) => {
@@ -9,9 +9,8 @@ const mockNumberItem = (id) => {
 describe('The GuessListMain component', () => {
   it('renders without crashing', () => {
     const gameParam = { game: {}, guessList: [], isGameOver: jest.fn(), isWin: jest.fn() }
-    const component = renderer.create(<GuessListMain gameParam={gameParam} />)
-    const render = component.toJSON()
-    expect(render).toMatchSnapshot()
+    const { toJSON } = render(<GuessListMain gameParam={gameParam} />)
+    expect(toJSON()).toMatchSnapshot()
   })
 
   it('renders without crashing when game win', () => {
@@ -25,9 +24,8 @@ describe('The GuessListMain component', () => {
       isGameOver: jest.fn(),
       isWin: jest.fn(() => true),
     }
-    const component = renderer.create(<GuessListMain gameParam={gameParam} />)
-    const render = component.toJSON()
-    expect(render).toMatchSnapshot()
+    const { toJSON } = render(<GuessListMain gameParam={gameParam} />)
+    expect(toJSON()).toMatchSnapshot()
   })
 
   it('renders without crashing when game over', () => {
@@ -49,8 +47,7 @@ describe('The GuessListMain component', () => {
       isGameOver: jest.fn(() => true),
       isWin: jest.fn(),
     }
-    const component = renderer.create(<GuessListMain gameParam={gameParam} />)
-    const render = component.toJSON()
-    expect(render).toMatchSnapshot()
+    const { toJSON } = render(<GuessListMain gameParam={gameParam} />)
+    expect(toJSON()).toMatchSnapshot()
   })
 })

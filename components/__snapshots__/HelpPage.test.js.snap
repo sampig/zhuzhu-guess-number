@@ -3,7 +3,7 @@
 exports[`The HelpPage component renders without crashing 1`] = `
 <View
   style={
-    Object {
+    {
       "alignItems": "flex-start",
       "display": "flex",
       "flex": 1,
@@ -15,7 +15,7 @@ exports[`The HelpPage component renders without crashing 1`] = `
 >
   <Text
     style={
-      Object {
+      {
         "fontSize": 30,
         "marginBottom": 25,
         "marginTop": 25,
@@ -26,7 +26,33 @@ exports[`The HelpPage component renders without crashing 1`] = `
   </Text>
   <Text
     style={
-      Object {
+      {
+        "color": "#888",
+        "fontSize": 14,
+        "marginBottom": 10,
+      }
+    }
+  >
+    App Version:
+     
+    1.0.0
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#888",
+        "fontSize": 14,
+        "marginBottom": 10,
+      }
+    }
+  >
+    Build:
+     
+    1
+  </Text>
+  <Text
+    style={
+      {
         "fontSize": 18,
       }
     }

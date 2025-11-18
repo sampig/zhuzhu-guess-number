@@ -1,5 +1,6 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { Platform } from 'react-native'
+import { render } from '@testing-library/react-native'
 import Home from './Home'
 
 const navigation = { navigate: jest.fn() }
@@ -22,8 +23,14 @@ jest.mock('hooks/useNumber', () => ({
 
 describe('The Home component', () => {
   it('renders without crashing', () => {
-    const component = renderer.create(<Home navigation={navigation} />)
-    const render = component.toJSON()
-    expect(render).toMatchSnapshot()
+    Platform.OS = 'ios'
+    const { toJSON } = render(<Home navigation={navigation} />)
+    expect(toJSON()).toMatchSnapshot()
+  })
+
+  it('renders with Android platform', () => {
+    Platform.OS = 'android'
+    const { toJSON } = render(<Home navigation={navigation} />)
+    expect(toJSON()).toMatchSnapshot()
   })
 })

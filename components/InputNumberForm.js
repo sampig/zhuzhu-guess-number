@@ -97,6 +97,7 @@ function InputNumberForm ({ gameParam, tryGuess }) {
         {[0, 1, 2, 3].map((index) => (
           <TextInput
             key={index}
+            testID={`input-number-${index}`}
             ref={inputRefs[index]}
             style={styles.textInput}
             value={guessValues[index] !== undefined ? String(guessValues[index]) : ''}
