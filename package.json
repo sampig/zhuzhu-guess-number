@@ -7,12 +7,16 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "lint": "eslint components/*.js hooks/*.js",
-    "test": "node_modules/.bin/jest",
+    "test": "node_modules/.bin/jest --json --outputFile=test-results/jest-results.json",
     "test:coverage": "node_modules/.bin/jest --coverage",
     "verify": "yarpm lint && yarpm test:coverage"
   },
   "jest": {
     "preset": "jest-expo",
+    "reporters": [
+      "default",
+      "github-actions"
+    ],
     "collectCoverageFrom": [
       "components/**/*.js",
       "!hooks/*.js",
