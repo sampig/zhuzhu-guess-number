@@ -7,11 +7,8 @@ You can try it in Browser or build it on Android or Apple platform.
 <p align="center">
 
 [![Latest release](https://img.shields.io/github/v/release/sampig/zhuzhu-guess-number?style=flat-square)](https://github.com/sampig/zhuzhu-guess-number/releases)
-
 [![CI](https://github.com/sampig/zhuzhu-guess-number/actions/workflows/ci.yml/badge.svg)](https://github.com/sampig/zhuzhu-guess-number/actions/workflows/ci.yml)
-
 [![Build status](https://img.shields.io/github/actions/workflow/status/sampig/zhuzhu-guess-number/ci.yml?branch=master&style=flat-square)](https://github.com/sampig/zhuzhu-guess-number/actions)
-
 [![CI/CD](https://github.com/sampig/zhuzhu-guess-number/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/sampig/zhuzhu-guess-number/actions/workflows/ci-cd.yml)
 
 </p>
