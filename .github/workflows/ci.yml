@@ -47,11 +47,10 @@ jobs:
         run: npm run test:coverage
         continue-on-error: false
 
-      - name: Upload test artifacts
+      - name: Upload test report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-test-report@v1
         with:
-          name: test-results-${{ matrix.node-version }}
           path: test-results/test-results-junit.xml
           retention-days: 30
 
