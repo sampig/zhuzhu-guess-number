@@ -49,9 +49,10 @@ jobs:
 
       - name: Upload test report
         if: always()
-        uses: actions/upload-test-report@v1
+        uses: actions/upload-artifact@v4
         with:
-          path: test-results/test-results-junit.xml
+          name: test-results-${{ matrix.node-version }}
+          path: test-results/
           retention-days: 30
 
       - name: Upload coverage reports
